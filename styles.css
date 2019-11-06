@@ -1,3 +1,72 @@
+slider {
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+ }
+ 
+ slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+ }
+ 
+ slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url(Mubarak.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url(indonesia.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url(mayweather.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide:nth-child(4){
+  left: 0%;
+  animation-delay: 8s;
+  background-image: url(cod.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide p {
+  font-family: Comfortaa;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 340px;
+  color: #fff;
+ }
+ 
+ @keyframes slide {
+  0% { left: 100%; width: 100%; }
+  5% { left: 0%; }
+  25% { left: 0%; }
+  30% { left: -100%; width: 100%; }
+  30.0001% { left: -100%; width: 0%; }
+  100% { left: 100%; width: 0%; }
+ }
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -52,3 +121,36 @@ body {
     width: 50%;
   }
 
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
