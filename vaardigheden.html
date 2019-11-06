@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body style="background-color: powderblue;">
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="over-mij.html">Over Mij</a>
@@ -42,5 +42,16 @@
               <p>Computer tests, overclocken, bottleneck fixes, Windows installeren en Windows configureren</p>
             </div>
           </div>
+
+    <p id="date"></p>
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
+
+        
 </body>
       </div>

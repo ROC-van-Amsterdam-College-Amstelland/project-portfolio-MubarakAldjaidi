@@ -8,7 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+
+
+
+<body style="background-color: powderblue;">
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="over-mij.html">Over Mij</a>
@@ -18,7 +21,8 @@
         <a href="contact.html">Contact</a>
       </div>
 
-    <h3>Over Mij</h3>  
+    
+      <h3>Over Mij</h3>  
       
       
       
@@ -49,5 +53,15 @@
                     Dat heb ik misschien 4 jaar lang gedaan en heb er heel veel van opgestoken. Op 14 jarige leeftijd wou ik heel graag de opleiding Applicatieontwikkelaar gaan doen en eindelijk op 21 jarige leeftijd kan ik met volle borst zeggen dat ik deze opleiding eindelijk doe.
                     Ben zelf een heel rustig persoon, en ben altijd in staat om andere te helpen. 
             </center></p>
+
+    
+    <p id="date"></p>
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
 </body>
       </div>

@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body style="background-color: powderblue;">
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="over-mij.html">Over Mij</a>
@@ -16,3 +16,21 @@
         <a href="nieuws.html">Laatste nieuws</a>
         <a href="contact.html">Contact</a>
       </div>
+
+
+      <h3>Het laatste nieuws</h3> 
+
+
+      <a href="https://www.at5.nl/artikelen/198018/ajaxfans-in-de-kroeg-we-zijn-gewoon-genaaid">
+        <img src="ajax.jpg" alt="HTML tutorial" style="width:300px;height:300px;border:0;">
+      </a>
+
+    
+  <p id="date"></p>
+      <script>
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+      </script>
